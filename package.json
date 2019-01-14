@@ -1,0 +1,18 @@
+{
+  "name": "templater",
+  "version": "0.0.1",
+  "description": "Simple templating tool.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jacob Tichenor",
+  "license": "ISC",
+  "bin": {
+    "templater": "./index.js"
+  },
+  "dependencies": {
+    "create-file": "^1.0.1",
+    "write": "^1.0.3"
+  }
+}
