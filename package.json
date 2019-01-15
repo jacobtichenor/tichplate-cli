@@ -1,7 +1,7 @@
 {
   "name": "tichplate",
   "version": "0.0.1",
-  "description": "Simple templating tool.",
+  "description": "Simple templating tool",
   "main": "index.js",
   "scripts": {},
   "author": "Jacob Tichenor",
