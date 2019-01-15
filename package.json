@@ -1,5 +1,5 @@
 {
-  "name": "templater",
+  "name": "tichplate",
   "version": "0.0.1",
   "description": "Simple templating tool.",
   "main": "index.js",
@@ -9,7 +9,7 @@
   "author": "Jacob Tichenor",
   "license": "ISC",
   "bin": {
-    "templater": "./index.js"
+    "tichplate": "./index.js"
   },
   "dependencies": {
     "create-file": "^1.0.1",

@@ -9,37 +9,33 @@ var indexHtmlContent = '<!DOCTYPE html>\n<html lang="en">\n<head>\n\t<meta chars
 
 // ********** css check ***********
 if (fs.existsSync("css")) {
-  console.log("css directory is here.");
-
   var data = {};
   var exists = false;
   readFiles("css/", function(filename) {
     data = filename;
     if(data == "reset.css") {
-      console.log("reset.css already exists.");
       exists = true;
     } else if (exists == false) {
       createFile('css/reset.css', resetCssContent, function (err) {
         // file either already exists or is now created (including non existing directories)
       });
       exists = true;
-      console.log("reset.css has been created! make sure it's linked in the html :)");
+      console.log("CREATED: 'css/reset.css'");
     } 
   }, function(err) {
     throw err;
   });
 } else {
   fs.mkdirSync("./css");
-  console.log("css directory has been created!");
+  console.log("CREATED: 'css/'");
   writeFile("css/reset.css", resetCssContent, function(err) {
     if (err) console.log(err);
   });
-  console.log("css/reset.css has been created!");
+  console.log("CREATED: 'css/reset.css'");
 }
 
 // *********** index.html check ***********
 if (fs.existsSync("./index.html")) { 
-  console.log("index.html already exists.");
 } else {
   writeFile('index.html', indexHtmlContent, function(err) {
     if (err) console.log(err);
@@ -48,18 +44,18 @@ if (fs.existsSync("./index.html")) {
 
 // *********** js file check ***********
 if (fs.existsSync("js")) { 
-  console.log("js directory already exists.");
 } else {
   fs.mkdirSync("./js");
-  console.log("js directory has been created!");
+
+  console.log("CREATED: 'js/'");
 }
 
 // *********** img file check ***********
 if (fs.existsSync("img")) { 
-  console.log("img directory already exists.");
 } else {
   fs.mkdirSync("./img");
-  console.log("img directory has been created!");
+  
+  console.log("CREATED: 'img/'");
 }
 
 // *********** functions ***********
