@@ -13,5 +13,12 @@
     "create-file": "^1.0.1",
     "prompt-input": "^3.0.0",
     "write": "^1.0.3"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/jacobtichenor/tichplate.git"
+  },
+  "bugs": {
+    "email": "admin@jacobtichenor.com"
   }
 }
