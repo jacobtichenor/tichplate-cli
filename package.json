@@ -1,5 +1,5 @@
 {
-  "name": "tichplate",
+  "name": "tichplate-cli",
   "version": "1.0.0",
   "description": "Simple templating tool",
   "main": "index.js",
@@ -15,8 +15,8 @@
     "write": "^1.0.3"
   },
   "repository": {
-    "type" : "git",
-    "url" : "https://github.com/jacobtichenor/tichplate.git"
+    "type": "git",
+    "url": "https://github.com/jacobtichenor/tichplate.git"
   },
   "bugs": {
     "email": "jake@jacobtichenor.com"
