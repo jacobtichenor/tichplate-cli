@@ -8,6 +8,7 @@ npm command line tool for making quick html templates
 <br />
 
 <h1>Use</h1>
-<pre>
-  <a>tichplate-cli</a>
-</pre>
+<ol>
+  <li><pre>cd root/of/your/project</pre></li>
+  <li><pre>tichplate</pre></li>
+</ol>
